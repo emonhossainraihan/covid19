@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/covid-19/static/css/main.f834ee3f.chunk.css",
+    "main.js": "/covid-19/static/js/main.64399550.chunk.js",
+    "main.js.map": "/covid-19/static/js/main.64399550.chunk.js.map",
+    "runtime-main.js": "/covid-19/static/js/runtime-main.8e18646f.js",
+    "runtime-main.js.map": "/covid-19/static/js/runtime-main.8e18646f.js.map",
+    "static/js/2.1dcb8f3f.chunk.js": "/covid-19/static/js/2.1dcb8f3f.chunk.js",
+    "static/js/2.1dcb8f3f.chunk.js.map": "/covid-19/static/js/2.1dcb8f3f.chunk.js.map",
+    "index.html": "/covid-19/index.html",
+    "precache-manifest.d9849ed9132c439c1acedc209b5d6b8c.js": "/covid-19/precache-manifest.d9849ed9132c439c1acedc209b5d6b8c.js",
+    "service-worker.js": "/covid-19/service-worker.js",
+    "static/css/main.f834ee3f.chunk.css.map": "/covid-19/static/css/main.f834ee3f.chunk.css.map",
+    "static/js/2.1dcb8f3f.chunk.js.LICENSE.txt": "/covid-19/static/js/2.1dcb8f3f.chunk.js.LICENSE.txt",
+    "static/media/cases.png": "/covid-19/static/media/cases.feea5fb1.png",
+    "static/media/corona.svg": "/covid-19/static/media/corona.e15730a5.svg",
+    "static/media/deaths-large.png": "/covid-19/static/media/deaths-large.b379f9d1.png",
+    "static/media/recovered.png": "/covid-19/static/media/recovered.66525ad4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e18646f.js",
+    "static/js/2.1dcb8f3f.chunk.js",
+    "static/css/main.f834ee3f.chunk.css",
+    "static/js/main.64399550.chunk.js"
+  ]
+}
