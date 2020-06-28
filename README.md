@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -37,32 +35,67 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `npm i novelcovid axios react-chartjs-2`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* dependency for react-chartjs-2: `npm i --save chart.js`
+* for formatting time and show counting effect: `npm i --save react-moment react-countup`
 
-### Code Splitting
+In JavaScript, arrays and obect are different, although they are somewhat similar, but here the react needs an array. You need to create an array from the object and apply it.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```js
+let array = new Array(object.length);
+let i = 0;
 
-### Analyzing the Bundle Size
+for (var key in object) {
+  array[i] = object[key];
+  i = i + 1;
+}
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+use this method to check props passing correctly in `CountryPicker.js`
 
-### Making a Progressive Web App
+```js
+<CountryPicker
+  localData={localData}
+  handleCountryChange={this.handleCountryChange}
+/>;
+{
+  console.log('Still fetching Opps then you will get nothing');
+}
+//================================= CountryPicker Component ==============================
+const CountryPicker = ({ handleCountryChange, localData }) => {
+  let DataArray = new Array(localData.length);
+  let i = 0;
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+  for (var key in localData) {
+    DataArray[i] = localData[key];
+    i = i + 1;
+  }
+  return (
+    <div>
+      <h1>Hello button</h1>
+      {console.log('If fetch done then you will get data')}
+      {console.log(DataArray)}
+    </div>
+  );
+};
+```
 
-### Advanced Configuration
+## React lifeCycle method
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- [react-lifecycle](https://www.youtube.com/watch?v=m_mtV4YaI8c)
+- [replace-lifecycle-by-hook](https://dev.to/trentyang/replace-lifecycle-with-hooks-in-react-3d4n)
 
-### Deployment
+## InlineStyling JSX
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- The only difference with JSX is that inline styles must be written as an object instead of a string.
+  `<h1 style={{ color: "red" }}>Hello World</h1>`
+- In the style attribute above, the first set of curly brackets will tell your JSX parser that the content between the brackets is JavaScript (and not a string). The second set of curly bracket will initialize a JavaScript object.
 
-### `yarn build` fails to minify
+- **Inline Styling/CSS Stylesheets/CSS Modules/Styled Components** :airplane: [All](https://www.freecodecamp.org/news/react-styled-components-inline-styles-3-other-css-styling-approaches-with-examples/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## About Me
+
+<a href="https://stackexchange.com/users/9277340"><img src="https://stackexchange.com/users/flair/9277340.png" width="208" height="58" alt="profile for emonhossain on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for emonhossain on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
